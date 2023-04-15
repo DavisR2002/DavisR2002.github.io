@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accountability, Authenication and Authorization</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Allerta" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/app.css">
+    <link rel="stylesheet" href="assets/coolButton.css">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/0bf12c30ec.js" crossorigin="anonymous"></script>
+
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Allerta', sans-serif;
+            color: white;
+            background-color: #03182f;
+        }
+
+        section {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 400px;
+            padding: 100px 20vw;
+        }
+
+        .blue {
+            background: #00296b;
+        }
+
+        .yellow {
+            background: #fda500;
+        }
+
+        .dark {
+            background: #03182f;
+        }
+
+        .wave {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .wave svg {
+            position: relative;
+            display: block;
+            width: calc(130% + 1.3px);
+            height: 265px;
+        }
+
+        .wave .shape-fill {
+            fill: #00296b;
+        }
+
+        .spacer {
+            aspect-ratio: 960/120;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .layer1 {
+            background-image: url(assets/images/layeredWaves.svg);
+
+        }
+
+        .layer2 {
+            background-image: url(assets/images/layeredWaves2.svg);
+        }
+
+        .flip {
+            transform: rotate(180deg);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-custom">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">CyScape</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="moduleList.html">Modules</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="spacer layer2"></div>
+    <section class="blue">
+        <h1>1.2: Accountability, Authenication and Authorization</h1>
+        <br>
+        <p class="pFont">Beyond the <b class="bYellow">CIA Triad</b> are some other concepts that are essential
+            for any aspiring digital security specialist to be familiar with. These are the concepts of
+            <b class="bYellow">Accountability</b>, <b class="bYellow">Authenication</b> and <b
+                class="bYellow">Authorization</b>.
+            <b class="bYellow">Accountability</b> refers to the concept of knowing the <b
+                class="bYellow">responsibilities
+                of a person or process</b>. It is essential to understand where responsibilities lie
+            when designing a security system, as each element of it will (ideally) be made to
+            prevent, detect or limit threats.
+            <br><br>
+            <b class="bYellow">Authenication</b> is a word used to describe the process of determining who or what
+            something is.
+            In a security setting, this can be achieved in multiple ways. Examples include <b>biometric
+                scanning</b>,
+            <b class="bYellow">employee keycards</b> or <b class="bYellow">staff login details</b>. These are all
+            measures put in place to
+            ensure that people
+            who want to access important things <b>are who they say they are</b>.
+            <br><br>
+            <b class="bYellow">Authorization</b> describes the process of determining whether someone is allowed to gain
+            access
+            to something.
+            This is just as important as authenticating somebody, if not more important, as to authorize a
+            person means to
+            allow them access to whatever it is they are looking for.
+            <br><br>
+            <b class="bYellow">The three A's</b> (as a way to group these terms) can be seen in action throughout the
+            digital
+            world.
+            <b class="bYellow">Email verification</b>
+            is a ubiquitous example of both authentication and authorization - the user <b class="bYellow">enters their
+                email</b> to
+            authenticate themselves
+            as a real person, and is then authorized to <b class="bYellow">access</b> the service they wish to use. In
+            this
+            situation,
+            it is the verification
+            service's <b class="bYellow">responsibility</b> to ensure that the authentication process is correct.
+        </p>
+    </section>
+
+    <div class="spacer layer1 flip"></div>
+    <section class="yellow">
+        <h1>Explanatory Video</h1>
+        <p class="pFont">Courtesy of: Jeff Crume at <a class="linkedStuffBlue"
+                href="https://www.youtube.com/@cyberexpertsacademy2988"> Cyber Experts Academy</a></p>
+        <video width="320" height="240" controls>
+            <source src="assets/videos/AAA.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <br><br>
+        <h1>Key Points:</h1>
+        <br>
+        <div class="row">
+            <div class="col-4">
+                <p class="pFont">
+                    1. Remember the <b class="bBlue">Three A's</b>! (AAA)
+                    <li class="pFont"><b class="bBlue">Accountability</b>
+                    </li>
+                    <li class="pFont">
+                        <b class="bBlue">Authenication</b>
+                    </li>
+                    <li class="pFont">
+                        <b class="bBlue">AAuthorization</b>
+                    </li>
+                </p>
+            </div>
+            <div class="col-4" style="border-left: solid 1px var(--bg-primary);">
+                <p class="pFont">
+                    2. It is essential to consider what a security system (and its elements) are
+                    <b class="bBlue">responsible</b> for.
+                    This is commonly found by looking at <b class="bBlue">what the system (or component) does</b>,
+                    whether
+                    that be Authenticating,
+                    Authorizating or some other function.
+                </p>
+            </div>
+
+            <div class="col-4" style="border-left: solid 1px var(--bg-primary);">
+                <p class="pFont">
+                    3. A complete security system will make use of both <b class="bBlue">Authentication</b> and
+                    <b class="bBlue">Authorization</b>
+                    systems.
+                </p>
+            </div>
+        </div>
+
+    </section>
+    <div class="spacer layer1"></div>
+    <div class="spacer layer2 flip"></div>
+
+    <section class="dark">
+
+        <h1>Section Completed!</h1>
+
+        <br><br>
+
+        <a href="module1_1.html"><button class="coolButtonPrev pFont">Last Section</button></a>
+        <br><br><br><br>
+        <a href="module1_3.html"><button class="coolButtonNext pFont">Next Section</button></a>
+
+
+
+    </section>
+
+
+    <div class="footer">
+        <h4><b>
+                This website was created by Reece Davis - Nottingham Trent University
+            </b></h4>
+    </div>
+</body>
+
+</html>

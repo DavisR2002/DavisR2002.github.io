@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modules</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Allerta" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/app.css">
+    <link rel="stylesheet" href="assets/coolButton.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/0bf12c30ec.js" crossorigin="anonymous"></script>
+
+
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Allerta', sans-serif;
+            color: white;
+            background-color: #03182f;
+        }
+
+        section {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 400px;
+            padding: 100px 20vw;
+        }
+
+        .blue {
+            background: #00296b;
+        }
+
+        .yellow {
+            background: #fda500;
+        }
+
+        .dark {
+            background: #03182f;
+        }
+
+        .wave {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .wave svg {
+            position: relative;
+            display: block;
+            width: calc(130% + 1.3px);
+            height: 265px;
+        }
+
+        .wave .shape-fill {
+            fill: #00296b;
+        }
+
+        .spacer {
+            aspect-ratio: 960/120;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .layer1 {
+            background-image: url(assets/images/layeredWaves.svg);
+
+        }
+
+        .layer2 {
+            background-image: url(assets/images/layeredWaves2.svg);
+        }
+
+        .layer3 {
+            background-image: url(assets/images/layeredWaves3.svg);
+        }
+
+        .flip {
+            transform: rotate(180deg);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-custom">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">CyScape</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="moduleList.html">Modules</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="spacer layer2"></div>
+    <section class="blue">
+        <h1>Modules</h1>
+        <br><br>
+        <p class="pFont">See below a list of Modules and their content:</p>
+    </section>
+
+    <div class="spacer layer1 flip"></div>
+
+    <section class="yellow">
+
+        <h1>Module 1: Basic Key Concepts</h1>
+        <br><br>
+        <p class="pFont" style="text-align: center;">
+            <b class="bBlue"><a href="module1_1.html">1.1 The CIA Triad</a><br><br></b>
+            <b class="bBlue"><a href="module1_2.html">1.2 Accountability, Authenication and
+                    Authorization</a><br><br></b>
+            <b class="bBlue"><a href="module1_3.html">1.3 Assets, Threats and Vulnerabilities</a><br><br></b>
+            <b class="bBlue"><a href="module1_4.html">1.4 Risks</a><br><br></b>
+            <b class="bBlue"><a href="module1_5.html">1.5 Controls</a><br><br></b>
+            <b class="bBlue"><a href="quiz.html">Module 1 Quiz</a></b>
+
+        </p>
+
+    </section>
+
+    <div class="spacer layer3 flip"></div>
+
+    <div class="footer">
+        <h4><b>
+                This website was created by Reece Davis - Nottingham Trent University
+            </b></h4>
+    </div>
+</body>
+
+</html>

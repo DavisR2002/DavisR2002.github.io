@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controls</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Allerta" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/app.css">
+    <link rel="stylesheet" href="assets/coolButton.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/0bf12c30ec.js" crossorigin="anonymous"></script>
+
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Allerta', sans-serif;
+            color: white;
+            background-color: #03182f;
+        }
+
+        section {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 400px;
+            padding: 100px 20vw;
+        }
+
+        .blue {
+            background: #00296b;
+        }
+
+        .yellow {
+            background: #fda500;
+        }
+
+        .dark {
+            background: #03182f;
+        }
+
+        .wave {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .wave svg {
+            position: relative;
+            display: block;
+            width: calc(130% + 1.3px);
+            height: 265px;
+        }
+
+        .wave .shape-fill {
+            fill: #00296b;
+        }
+
+        .spacer {
+            aspect-ratio: 960/120;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .layer1 {
+            background-image: url(assets/images/layeredWaves.svg);
+
+        }
+
+        .layer2 {
+            background-image: url(assets/images/layeredWaves2.svg);
+        }
+
+        .flip {
+            transform: rotate(180deg);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-custom">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">CyScape</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="moduleList.html">Modules</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="spacer layer2"></div>
+    <section class="blue">
+        <h1>1.5: Controls</h1>
+        <br>
+        <p class="pFont"><b class="bYellow">Controls</b> are fundamental components of digital security and risk
+            management.
+            The term describes any <b class="bYellow">policies</b>, <b class="bYellow">techniques</b>, <b
+                class="bYellow">solutions</b>, <b class="bYellow">technologies</b> or
+            <b class="bYellow">actions</b> that can protect
+            an organization's assets.
+            <br>
+            As we have discussed in the previous section, an aspect of <b class="bYellow">risk assessments</b> are
+            to determine which controls will be most effective at protecting important assets. An important part
+            of this
+            is to analyse how well <b class="bYellow">existing cybersecurity controls</b> have performed.
+            <br><br>
+            Controls fall into <b class="bYellow">three catagories</b>:
+            <b class="bYellow">Preventative Controls</b>, which prevent incidents from occuring.
+            <b class="bYellow">Detective Controls</b>, which recognize attacks as they are in progress, then alert
+            security
+            teams.
+            <b class="bYellow">Corrective Controls</b>, which help to minimize the impact from a cyber-attack and
+            return to
+            normality ASAP.
+            <br><br>
+            Within those three catagories, there are multiple types of controls:
+            <b class="bYellow">Technical</b> controls, which can include antivirus software, firewalls or software
+            patches.
+            <b class="bYellow">Administrative</b> controls, which can include cybersecurity policies, staff security
+            awareness training,
+            or a <a class="linkedStuffYellow"
+                href="https://blog.usecure.io/what-is-a-clean-desk-policy-and-should-my-company-have-it">clear-desk
+                policy</a>.
+            <b class="bYellow">Physical Controls</b>, which can include locked doors, on-site security teams or
+            biometric
+            scanning.
+        </p>
+    </section>
+
+    <div class="spacer layer1 flip"></div>
+    <section class="yellow">
+        <h1>Explanatory Video</h1>
+        <p class="pFont">Courtesy of: <a class="linkedStuffBlue" href="https://www.youtube.com/@ItproTv"> ItproTv</a>
+        </p>
+        <video width="320" height="240" controls>
+            <source src="assets/videos/Controls.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <br><br>
+        <h1>Key Points:</h1>
+        <br>
+        <div class="row">
+            <div class="col-4">
+                <p class="pFont">
+                    1. <b class="bBlue">Controls</b> are anything that a company has in place to protect its assets.
+                </p>
+            </div>
+            <div class="col-4" style="border-left: solid 1px var(--bg-primary);">
+                <p class="pFont">
+                    2. Controls are mainly organized into three catagories:</p>
+                <ul class="pFont">
+                    <li>
+                        <b class="bBlue">Preventative Controls</b>
+                    </li>
+                    <br>
+                    <li>
+                        <b class="bBlue">Detective Controls</b>
+                    </li>
+                    <br>
+                    <li>
+                        <b class="bBlue">Corrective Controls</b>
+                    </li>
+                </ul>
+                <p class="pFont">
+                    The catagorization of each control is based on the function that the control is meant to
+                    perform.
+                </p>
+            </div>
+            <div class="col-4" style="border-left: solid 1px var(--bg-primary);">
+                <p class="pFont">
+                    3. Controls are further organized into three subtypes:</p>
+                <ul class="pFont">
+                    <li>
+                        <b class="bBlue">Technical</b>
+                    </li>
+                    <br>
+                    <li>
+                        <b class="bBlue">Administrative</b>
+                    </li>
+                    <br>
+                    <li>
+                        <b class="bBlue">Physical</b>
+                    </li>
+                </ul>
+                <p class="pFont">
+                    This is determined by the method that each control uses to protect an organization's
+                    assets.
+                </p>
+            </div>
+        </div>
+        </div>
+
+    </section>
+    <div class="spacer layer1"></div>
+    <div class="spacer layer2 flip"></div>
+
+    <section class="dark">
+
+        <h1>Section Completed!</h1>
+
+        <br><br>
+
+        <a href="module1_4.html"><button class="coolButtonPrev pFont">Last Section</button></a>
+        <br><br><br><br>
+        <a href="module1_6.html"><button class="coolButtonNext pFont">Next Section</button></a>
+
+
+
+    </section>
+
+    <div class="footer">
+        <h4><b>
+                This website was created by Reece Davis - Nottingham Trent University
+            </b></h4>
+    </div>
+</body>
+
+</html>

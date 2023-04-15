@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assets, Threats and Vulnerabilities</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Allerta" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/app.css">
+    <link rel="stylesheet" href="assets/coolButton.css">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/0bf12c30ec.js" crossorigin="anonymous"></script>
+
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Allerta', sans-serif;
+            color: white;
+            background-color: #03182f;
+        }
+
+        section {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 400px;
+            padding: 100px 20vw;
+        }
+
+        .blue {
+            background: #00296b;
+        }
+
+        .yellow {
+            background: #fda500;
+        }
+
+        .dark {
+            background: #03182f;
+        }
+
+        .wave {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .wave svg {
+            position: relative;
+            display: block;
+            width: calc(130% + 1.3px);
+            height: 265px;
+        }
+
+        .wave .shape-fill {
+            fill: #00296b;
+        }
+
+        .spacer {
+            aspect-ratio: 960/120;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .layer1 {
+            background-image: url(assets/images/layeredWaves.svg);
+
+        }
+
+        .layer2 {
+            background-image: url(assets/images/layeredWaves2.svg);
+        }
+
+        .flip {
+            transform: rotate(180deg);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-custom">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">CyScape</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="moduleList.html">Modules</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="spacer layer2"></div>
+    <section class="blue">
+        <h1>1.3: Assets, Threats and Vulnerabilities</h1>
+        <br>
+        <p class="pFont">It's very important to understand what a security system should be doing, which we have
+            established
+            in the earlier chapters. It is
+            also just
+            as important, however, to understand what it is you are <b class="bYellow">protecting</b>; your
+            "<b class="bYellow">Assets</b>",
+            what you are
+            trying
+            to <b class="bYellow">avoid</b>; your "<b class="bYellow">Threats</b>", and where the system can
+            be <b class="bYellow">improved</b> to maintain its protective qualities; your "<b
+                class="bYellow">Vulnerabilities</b>".
+
+            <br><br>An <b class="bYellow">asset</b> refers to anything that is of <b class="bYellow">value</b> to a
+            person or organisation.
+            This
+            can
+            be sensitive data, important devices, money and many other forms. An <b class="bYellow">asset container</b>
+            refers
+            to the
+            location where the asset is stored, which is quite an important aspect to consider.
+            Adversely, <b class="bYellow">threats</b> are potential incidents that can cause some kind of negative
+            effect
+            against
+            an asset. Any event that can result in the compromise of an assets's <b class="bYellow">Confidentiality</b>,
+            <b class="bYellow"> Integrity</b>
+            or <b class="bYellow">Availabilty</b> can be considered as a threat. Threats can be both deliberate, through
+            criminal means,
+            or accidental, caused by human or technical errors. <br><br>
+            <b class="bYellow">Vulnerabilities</b> are flaws in the security system of an organization that can be
+            exploited in
+            order
+            to cause a <b class="bYellow">threat to become realized</b>.
+            Vulnerabilities can be found in software used by an organization that is in need of updating or
+            possesses
+            exploitable bugs in their code. They can also be found in the physical security in place to protect
+            an
+            <b class="bYellow">information asset container</b>.
+            A lack of guarding, cameras or even broken locks or doors can be examples of physical
+            vulnerabilities.
+        </p>
+    </section>
+
+    <div class="spacer layer1 flip"></div>
+    <section class="yellow">
+        <h1>Explanatory Video</h1>
+        <br>
+        <p class="pFont">Courtesy of: Jeff Crume at <a class="linkedStuffBlue"
+                href="https://www.youtube.com/@IBMTechnology"> Cyber Experts Academy</a></p>
+        <br><br>
+        <video width="320" height="240" controls>
+            <source src="assets/videos/Threats Vulnerabilities and Exploits.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <br><br>
+        <h1>Key Points:</h1>
+        <br>
+        <div class="row">
+            <div class="row">
+                <div class="col-4">
+                    <p class="pFont">
+                        1. <b class="bBlue">Assets</b> are important things, which is why they are the targets of
+                        <b class="bBlue">threats</b>.
+                        This is made possible through the exploitation of <b class="bBlue">vulnerabilities</b>.
+                    </p>
+                </div>
+                <div class="col-4" style="border-left: solid 1px var(--bg-primary);">
+                    <p class="pFont">
+                        2. A commonly exploited <b class="bBlue">vulnerability</b> is the lack of security in place to
+                        guard an <b class="bBlue">asset information container</b>.
+                    </p>
+                </div>
+
+                <div class="col-4" style="border-left: solid 1px var(--bg-primary);">
+                    <p class="pFont">
+                        3. Using the <b class="bBlue">CIA Triad</b> in order to identify potential threats is a good way
+                        to
+                        notice unseen <b class="bBlue">vulnerabilities</b> that a security system has.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <div class="spacer layer1"></div>
+    <div class="spacer layer2 flip"></div>
+
+    <section class="dark">
+
+        <h1>Section Completed!</h1>
+
+        <br><br>
+        <a href="module1_2.html"><button class="coolButtonPrev pFont">Last Section</button></a>
+        <br><br><br><br>
+        <a href="module1_4.html"><button class="coolButtonNext pFont">Next Section</button></a>
+
+
+        </div>
+
+    </section>
+
+    <div class="footer">
+        <h4><b>
+                This website was created by Reece Davis - Nottingham Trent University
+            </b></h4>
+    </div>
+</body>
+
+</html>

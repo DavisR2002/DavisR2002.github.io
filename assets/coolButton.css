@@ -1,0 +1,57 @@
+.coolButton {
+    background: #001D3E;
+    color: #E7DFDD;
+    border: 2px solid #03182f;
+    padding: 1em 1em;
+    font-size: 1em;
+    transition: all 0.25s;
+}
+
+.coolButton:hover {
+    border-color: #7d82b8;
+    color: #E7DFDD;
+    box-shadow: 0 0.5em 0.5em -0.4em #7d82b8;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+
+.coolButtonPrev {
+    background: #001D3E;
+    color: #E7DFDD;
+    border: 2px solid #fdc500;
+    padding: 1em 1em;
+    font-size: 1em;
+    transition: all 0.25s;
+}
+
+.coolButtonPrev:hover {
+    border-color: #ee0c0c;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #af0909;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+
+.coolButtonNext {
+    background: #001D3E;
+    color: #E7DFDD;
+    border: 2px solid #fdc500;
+    padding: 1em 1em;
+    font-size: 1em;
+    transition: all 0.25s;
+}
+
+.coolButtonNext:hover {
+    border-color: #1df701;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #0ab604;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+
+.coolButtonPrev:link,
+.coolButtonPrev:visited .coolButtonNext:link,
+.coolButtonNext:visited {
+
+    color: #E7DFDD;
+}

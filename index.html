@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Allerta" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/app.css">
+    <link rel="stylesheet" href="assets/coolButton.css">
+    <link rel="stylesheet" href="assets/cookies.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/0bf12c30ec.js" crossorigin="anonymous"></script>
+
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Allerta', sans-serif;
+            color: white;
+            background-color: #03182f;
+        }
+
+        section {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 400px;
+            padding: 100px 20vw;
+        }
+
+        .blue {
+            background: #00296b;
+        }
+
+        .yellow {
+            background: #fda500;
+        }
+
+        .dark {
+            background: #03182f;
+        }
+
+        .spacer {
+            aspect-ratio: 960/120;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .layer1 {
+            background-image: url(assets/images/layeredWaves.svg);
+
+        }
+
+        .layer2 {
+            background-image: url(assets/images/layeredWaves2.svg);
+        }
+
+        .layer3 {
+            background-image: url(assets/images/layeredWaves3.svg);
+        }
+
+
+        .flip {
+            transform: rotate(180deg);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-custom">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">CyScape</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="moduleList.html">Modules</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="cookies-card" id="cookieCard" style=" z-index: 9;">
+        <p class="title">Cookies Consent</p>
+        <p class="info">By using this website, you automatically accept that we use cookies. <br>
+            <br>
+        </p>
+        <button id="accept" class="cta visible">Accept all</button>
+        &nbsp;&nbsp;<button id="deny" class="cta visible">Deny All</button>
+    </div>
+
+    <div class="spacer layer2"></div>
+    <section class="blue">
+        <h1>What is Cyber Security?</h1>
+        <br>
+        <p>If you've looked around within the last 20 years, you might have noticed that
+            <b class="bYellow">computers</b>
+            are commonplace nowadays: in your schools, shops and homes alike. Most people would sooner
+            realize
+            that
+            they have forgotten their mobile phones (which are also computer systems) at home, than their
+            wallets
+            or bank cards.
+            <br><br>
+            With computers and computer systems being so ubiquitous in our everyday lives, it is no surprise
+            that
+            the media is often filled with stories of '<b class="bYellow">cyber-attacks</b>' or '<b class="bYellow">data
+                breaches</b>' being carried out
+            against
+            companies and their customers.
+            <br><br>
+            As such, it stands to reason that there should be something in place in order to protect our
+            treasured
+            devices against those who would bring harm to them, whether physically or from afar.
+            <b class="bYellow">Cyber-Security</b>
+            is that something.
+        </p>
+    </section>
+
+    <div class="spacer layer1 flip"></div>
+    <section class="yellow">
+        <p>The word 'security' can be used to describe the protection and prevention of unauthorised access
+            or
+            damage
+            against the protected object, whether that be a location, an item or a person.
+            <br><br>
+            <b class="bBlue">Cyber-Security</b> takes a more specialised approach to this concept, in that it is a term
+            used
+            to describe
+            the protection of computer systems from threats. <b class="bBlue">Information Security</b> refers to a
+            broader
+            scope of protection,
+            considering the more physical threats to computer systems.
+            <br><br>
+            This website has been created to serve as a guide for all things <b class="bBlue">Digital Safety</b>.
+            Irrespective
+            of
+            if you are in need of a refresher, or are completely new to these concepts, this website will
+            (hopefully) provide for you, reader, a simplified explanation of key concepts and practices that
+            you
+            or those around you can employ in order to be more educated in the digital world.
+            <br><br>
+            Click here
+            to &nbsp;&nbsp; <a href="module1_1.html"><b><button class="coolButton"></b>Get
+                Started</button></a>
+        </p>
+
+    </section>
+    <div class="spacer layer3 flip"></div>
+
+
+    <div class="footer">
+        <h4><b>
+                This website was created by Reece Davis - Nottingham Trent University
+            </b></h4>
+    </div>
+
+    <script src="assets/cookies.js"></script>
+
+</body>
+
+</html>
