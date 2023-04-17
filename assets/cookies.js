@@ -1,5 +1,3 @@
-document.cookie = "cookieKey";
-
 const acceptBtn = document.getElementById('accept')
 
 acceptBtn.addEventListener('click', () => {
