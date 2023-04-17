@@ -102,6 +102,8 @@ submitBtn.addEventListener('click', () => {
            <h2>You answered ${score}/${quizData.length} questions correctly</h2>
            <button onclick="location.reload()">Reload</button>
            `
+
+            document.cookie = `score=${score}`
         }
     }
 })
