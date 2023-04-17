@@ -103,7 +103,7 @@
 
         <br><br>
 
-        <a href="index.html"><b><button onclick="updateCookies()" class="coolButton"></b>Accept Cookies</button></a>
+        <a href="index.html"><b><button onclick=" setCookie()" class="coolButton"></b>Accept Cookies</button></a>
 
     </section>
 
@@ -116,11 +116,17 @@
             </b></h4>
     </div>
 
-    <script src="assets/cookies.js"></script>
 
     <script>
-        function updateCookies() {
-            document.cookie = 'cookies=true'
+
+        function setCookie() {
+            var cname = "Cookies";
+            var cvalue = true;
+            var exdays = 2;
+            const d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            let expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
         }
     </script>
 

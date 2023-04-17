@@ -97,7 +97,7 @@
 
 </head>
 
-<body>
+<body onload="checkCookies()">
 
     <nav class="navbar navbar-custom">
         <div class="container-fluid">
@@ -212,6 +212,13 @@
                 This website was created by Reece Davis - Nottingham Trent University
             </b></h4>
     </div>
+    <script>
+        function checkCookies() {
+            if (document.cookie == '') {
+                window.location.replace("cookies.html");
+            }
+        }
+    </script>
 </body>
 
 </html>
