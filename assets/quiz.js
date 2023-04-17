@@ -88,6 +88,32 @@ function getSelected() {
     })
     return answer
 }
+
+function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    let expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getScore() {
+    let name = "score" + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let split = decodedCookie.split(';');
+    for (let i = 0; i < split.length; i++) {
+        let c = split[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+let currentScore = "";
+
 submitBtn.addEventListener('click', () => {
     const answer = getSelected()
     if (answer) {
@@ -100,10 +126,12 @@ submitBtn.addEventListener('click', () => {
         } else {
             quiz.innerHTML = `
            <h2>You answered ${score}/${quizData.length} questions correctly</h2>
-           <button onclick="location.reload()">Reload</button>
+           <button style="color: white;" onclick="location.reload()">Reload</button>
            `
-
-            document.cookie = `score=${score}`
+            currentScore = getScore();
+            if (score > currentScore) {
+                setCookie("score", score, 2);
+            }
         }
     }
 })
