@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Allerta" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/app.css">
+    <link rel="stylesheet" href="assets/coolButton.css">
+    <link rel="stylesheet" href="assets/cookies.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/0bf12c30ec.js" crossorigin="anonymous"></script>
+
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Allerta', sans-serif;
+            color: white;
+            background-color: #03182f;
+        }
+
+        section {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 400px;
+            padding: 100px 20vw;
+        }
+
+        .blue {
+            background: #00296b;
+        }
+
+        .yellow {
+            background: #fda500;
+        }
+
+        .dark {
+            background: #03182f;
+        }
+
+        .spacer {
+            aspect-ratio: 960/120;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .layer1 {
+            background-image: url(assets/images/layeredWaves.svg);
+
+        }
+
+        .layer2 {
+            background-image: url(assets/images/layeredWaves2.svg);
+        }
+
+        .layer3 {
+            background-image: url(assets/images/layeredWaves3.svg);
+        }
+
+
+        .flip {
+            transform: rotate(180deg);
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="spacer layer2"></div>
+    <section class="blue">
+        <h1>Before You Begin...</h1>
+        <br>
+        <p>In order to use this website, some information is going to be saved from your usage.
+            This information will <b class="bYellow">not</b> involve or pertain to any personal user information such as
+            your name, address, or any other important stuff.
+            <br><br>
+            The only information stored will be relevant to the website and only serves to make <b class="bYellow">your
+                experience</b> with
+            this
+            website <b class="bYellow">as good as possible</b>.
+            <br><br>
+            Please click the button below to enable the usage of <b class="bYellow">Cookies</b>.
+        </p>
+
+        <br><br>
+
+        <a href="index.html"><b><button onclick="updateCookies()" class="coolButton"></b>Accept Cookies</button></a>
+
+    </section>
+
+    <div class="spacer layer2 flip"></div>
+
+
+    <div class="footer">
+        <h4><b>
+                This website was created by Reece Davis - Nottingham Trent University
+            </b></h4>
+    </div>
+
+    <script src="assets/cookies.js"></script>
+
+    <script>
+        function updateCookies() {
+            document.cookie = 'cookies=true'
+        }
+    </script>
+
+</body>
+
+</html>

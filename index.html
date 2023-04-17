@@ -83,7 +83,7 @@
 
 </head>
 
-<body>
+<body onload="checkCookies()">
 
     <nav class="navbar navbar-custom">
         <div class="container-fluid">
@@ -179,6 +179,14 @@
     </div>
 
     <script src="assets/cookies.js"></script>
+
+    <script>
+        function checkCookies() {
+            if (document.cookie == '') {
+                window.location.replace("cookies.html");
+            }
+        }
+    </script>
 
 </body>
 
