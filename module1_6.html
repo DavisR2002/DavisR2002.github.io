@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Attacks</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Allerta" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/app.css">
+    <link rel="stylesheet" href="assets/coolButton.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/0bf12c30ec.js" crossorigin="anonymous"></script>
+
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Allerta', sans-serif;
+            color: white;
+            background-color: #03182f;
+        }
+
+        section {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 400px;
+            padding: 100px 20vw;
+        }
+
+        .blue {
+            background: #00296b;
+        }
+
+        .yellow {
+            background: #fda500;
+        }
+
+        .dark {
+            background: #03182f;
+        }
+
+        .wave {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .wave svg {
+            position: relative;
+            display: block;
+            width: calc(130% + 1.3px);
+            height: 265px;
+        }
+
+        .wave .shape-fill {
+            fill: #00296b;
+        }
+
+        .spacer {
+            aspect-ratio: 960/120;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .layer1 {
+            background-image: url(assets/images/layeredWaves.svg);
+
+        }
+
+        .layer2 {
+            background-image: url(assets/images/layeredWaves2.svg);
+        }
+
+        .flip {
+            transform: rotate(180deg);
+        }
+    </style>
+
+</head>
+
+<body onload="checkCookies()">
+
+    <nav class="navbar navbar-custom">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">CyScape</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="moduleList.html">Modules</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="spacer layer2"></div>
+    <section class="blue">
+        <h1>1.6: Cyber Attacks</h1>
+        <br>
+        <p class="pFont">Up until now, we have discussed many concepts that surround the idea of digital attacks against
+            computer systems, but have yet to talk about the attacks themselves.
+            <br><br>
+            <b class="bYellow">Vulnerable</b> business systems are a prime target for potential cyber-crime. Once an
+            <b class="bYellow">asset</b> has been compromised, a <b class="bYellow">ransom</b> can be demanded of the
+            business in exchange for the asset's safe return. <b class="bYellow">53%</b> percent of cyber attacks
+            resulted in damages of $500,000 or more.
+            <br><br>
+            As the name suggests, a <b class="bYellow">Cyber Attack</b> is an attack carried out across the internet,
+            digitally, by a <b class="bYellow">cyber-criminal</b>.
+            These attacks can vary in their <b class="bYellow">forms</b> and their levels of <b
+                class="bYellow">severity</b>. We'll only cover a few for the purpose of this module.
+            <br><br>
+            The top 3 <b class="bYellow">most common</b> cyber attack types are <b class="bYellow">Phishing</b>, <b
+                class="bYellow">Malware</b> and <b class="bYellow">Man in the Middle (MITM) attacks</b>.
+        </p>
+    </section>
+
+    <div class="spacer layer1 flip"></div>
+    <section class="yellow">
+        <h1>Explanatory Video</h1>
+        <p class="pFont">Courtesy of: <a class="linkedStuffBlue" href="https://www.youtube.com/@waqasitmaster">
+                WaqasITMaster</a>
+        </p>
+        <video width="320" height="240" controls>
+            <source src="assets/videos/What are Malware, Phishing and Man-in-the-Middle Attacks.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <br><br>
+        <h1>Key Points:</h1>
+        <br>
+        <div class="row">
+            <div class="col-4">
+                <p class="pFont">
+                    1. <b class="bBlue">Cyber attacks</b> are attacks that are carried out over the internet by <b
+                        class="bBlue">cyber criminals</b>.
+                </p>
+            </div>
+            <div class="col-4" style="border-left: solid 1px var(--bg-primary);">
+                <p class="pFont">
+                    2. <b class="bBlue">Malware</b> describes multiple types of harmful software which can be placed
+                    onto a victim's computer systems.
+                </p>
+            </div>
+            <div class="col-4" style="border-left: solid 1px var(--bg-primary);">
+                <p class="pFont">
+                    3. <b class="bBlue">Phishing</b> is a technique that involves tricking people into opening harmful
+                    files on their devices. These are most commonly seen in the form of convincing emails that look
+                    legitimate but actually contain harmful files.
+                <p class="pFont">
+                    <b class="bBlue">Man-in-the-Middle (MITM)</b> attacks occur when an attacker uses an <b
+                        class="bBlue">unsafe</b> digital
+                    environment to steal assets <b class="bBlue">during a transaction</b> between two parties. A common
+                    environment for this
+                    to take place could be a public or otherwise <b class="bBlue">Unsecure</b> WiFi network.
+                </p>
+            </div>
+        </div>
+        </div>
+
+    </section>
+    <div class="spacer layer1"></div>
+    <div class="spacer layer2 flip"></div>
+
+    <section class="dark">
+
+        <h1>Module Completed!</h1>
+        <br><br>
+
+        <p class="pFont">Well done on completing the module. Try the Module quiz when you think you are ready!</p>
+
+        <br><br>
+
+        <a href="quiz.html"><button class="coolButtonPrev pFont">Module Quiz</button></a>
+
+
+
+
+    </section>
+
+    <div class="footer">
+        <h4><b>
+                This website was created by Reece Davis - Nottingham Trent University
+            </b></h4>
+    </div>
+    <script>
+        function checkCookies() {
+            if (document.cookie == '') {
+                window.location.replace("cookies.html");
+            }
+        }
+    </script>
+</body>
+
+</html>

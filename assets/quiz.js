@@ -55,6 +55,14 @@ const quizData = [
         d: "None of the above",
         correct: "a",
     },
+    {
+        question: "Phishing could be described as: ",
+        a: "Breaking a computer using physical force",
+        b: "Tricking people with convincing looking emails",
+        c: "Stealing assets during a transaction between devices",
+        d: "Buying stolen data from a data broker",
+        correct: "a",
+    },
 ];
 const quiz = document.getElementById('quiz')
 const answerEls = document.querySelectorAll('.answer')
